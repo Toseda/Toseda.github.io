@@ -1,0 +1,113 @@
+body {
+    background-color: #1c1d21;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EAEAEA;
+}
+
+h1 {
+    border: 5px solid #EAEAEA;
+    width: 240px;
+    height: 80px;
+    display: block;
+}
+
+h2 {
+    color: #EAEAEA;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+nav {
+    font-weight: bold;
+    font-size: 160%;
+    padding: 0px;
+    text-align: left;
+    display: block;
+}
+
+#navwrapper {
+    background-color: #90C7E3;
+    background-image: linear-gradient(to right, #211246, #3c2478);
+    height: 50px;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+a:link {
+    color: #EAEAEA;
+}
+
+a:visited {
+    color: #EAEAEA;
+}
+
+a:hover {
+    color: #A52A2A;
+}
+
+footer {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 75%;
+    font-style: italic;
+    color: #EAEAEA;
+    text-align: center;
+    padding: 2em;
+    background-color: #211246;
+}
+
+section {
+        margin-left: 2em;
+        margin-right: 2em;
+        flex: 1;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(indexHero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.flow {
+        display: flex;
+        flex-direction: row;
+    }
+
+@supports (display: grid) {
+        nav ul {
+            flex-direction: column;
+            padding-top: 1em;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        .hero {
+            grid-area: hero;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-template: "header header"
+                            "hero hero"
+                            "main main"
+                            "footer footer" / 180px 1fr;
+        }
+
+    }
