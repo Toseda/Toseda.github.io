@@ -12,8 +12,13 @@ h1 {
 }
 
 h2 {
+    font-size: 220%;
     color: #EAEAEA;
     text-shadow: 1px 1px 1px #000000;
+}
+
+h3 {
+    font-size: 200%;
 }
 
 nav {
@@ -58,9 +63,23 @@ footer {
 }
 
 section {
-        margin-left: 2em;
-        margin-right: 2em;
-        flex: 1;
+    margin-left: 2em;
+    margin-right: 2em;
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+form input {
+    margin-bottom: 0.5em;
+}
+
+form textarea {
+    margin-bottom: 0.5em;
 }
 
 #homehero {
@@ -72,9 +91,9 @@ section {
 
 
 .flow {
-        display: flex;
-        flex-direction: row;
-    }
+    display: flex;
+    flex-direction: row;
+}
 
 @supports (display: grid) {
         nav ul {
