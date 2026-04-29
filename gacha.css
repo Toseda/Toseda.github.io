@@ -21,6 +21,10 @@ h3 {
     font-size: 200%;
 }
 
+b {
+    font-size: 200%;
+}
+
 nav {
     font-weight: bold;
     font-size: 160%;
@@ -68,6 +72,21 @@ section {
     flex: 1;
 }
 
+table {
+    border: 2px solid #3399CC;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid #3399CC;
+    padding: 0.5em;
+}
+
+td {
+    text-align: center;
+}
+
+
 form {
     display: flex;
     flex-direction: column;
@@ -85,6 +104,20 @@ form textarea {
 #homehero {
     height: 300px;
     background-image: url(indexHero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#gameshero {
+    height: 300px;
+    background-image: url(gamesHero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#basicshero {
+    height: 300px;
+    background-image: url(basicsHero.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
